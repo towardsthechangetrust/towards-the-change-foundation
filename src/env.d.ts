@@ -3,8 +3,10 @@
 declare global {
   interface CloudflareEnv {
     DB?: D1Database;
+    MEDIA_BUCKET?: R2Bucket;
     RESEND_API_KEY?: string;
     RESEND_TO_EMAIL?: string;
+    ADMIN_PASSWORD?: string;
   }
 }
 

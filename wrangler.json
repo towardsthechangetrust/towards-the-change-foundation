@@ -20,5 +20,11 @@
             "database_name": "ttc-contact-submissions",
             "database_id": "fe6353d6-c8c7-4f78-9867-879f230b665d"
         }
+    ],
+    "r2_buckets": [
+        {
+            "binding": "MEDIA_BUCKET",
+            "bucket_name": "ttc-media"
+        }
     ]
 }
