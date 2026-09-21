@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FootstepTrail } from "@/components/Logo";
 import { Stats } from "@/components/Stats";
 import { FocusGrid } from "@/components/FocusGrid";
+import { Partners } from "@/components/Partners";
 import { Journey } from "@/components/Journey";
 import { site } from "@/lib/site";
 
@@ -80,6 +81,7 @@ export default function Home() {
 
       <Stats />
       <FocusGrid />
+      <Partners />
       <Journey />
 
       <section className="mx-auto max-w-4xl px-6 py-14 text-center sm:py-20">

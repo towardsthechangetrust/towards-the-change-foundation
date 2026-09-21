@@ -143,6 +143,23 @@ const jsonLd = {
         "Environmental Action & Afforestation",
         "Livelihood & Digital Skill Training",
       ],
+      sponsor: [
+        {
+          "@type": "GovernmentOrganization",
+          name: "MY Bharat (Mera Yuva Bharat)",
+          parentOrganization: "Ministry of Youth Affairs & Sports, Government of India",
+        },
+        {
+          "@type": "GovernmentOrganization",
+          name: "Bureau of Indian Standards (BIS)",
+          parentOrganization: "Ministry of Consumer Affairs, Food & Public Distribution, Government of India",
+        },
+        {
+          "@type": "Organization",
+          name: "Haqdarshak",
+          description: "Citizen entitlement and welfare enablement platform",
+        },
+      ],
     },
     {
       "@type": "WebSite",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Journey } from "@/components/Journey";
+import { Partners } from "@/components/Partners";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -86,6 +87,7 @@ export default function AboutPage() {
       </section>
 
       <Journey />
+      <Partners />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <h2 className="font-display text-3xl font-semibold text-brand-dark">Our approach</h2>

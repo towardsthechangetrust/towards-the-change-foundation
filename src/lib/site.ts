@@ -85,3 +85,33 @@ export const journey = [
     description: "Awarded the Chief Minister's Youth Award by the Government of Tamil Nadu.",
   },
 ];
+
+export const partners = [
+  {
+    name: "MY Bharat",
+    shortName: "MY Bharat",
+    organization: "Mera Yuva Bharat",
+    authority: "Ministry of Youth Affairs & Sports, Govt. of India",
+    description:
+      "Collaborating to activate youth leadership, volunteer mobilization, and nation-building initiatives across Tamil Nadu.",
+    badge: "Youth & Volunteering",
+  },
+  {
+    name: "Bureau of Indian Standards",
+    shortName: "BIS",
+    organization: "National Standards Body of India",
+    authority: "Ministry of Consumer Affairs, Food & Public Distribution",
+    description:
+      "Partnering on grassroots quality standards, consumer rights awareness, and youth educational outreach in educational institutions.",
+    badge: "Standards & Awareness",
+  },
+  {
+    name: "Haqdarshak",
+    shortName: "Haqdarshak",
+    organization: "Citizen Entitlement Platform",
+    authority: "Leading Social Impact Enterprise",
+    description:
+      "Bridging the last-mile information gap to help rural, tribal, and vulnerable families apply for and access government welfare schemes.",
+    badge: "Welfare Schemes & Direct Benefit",
+  },
+];
