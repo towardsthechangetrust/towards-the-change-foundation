@@ -142,10 +142,17 @@ export function Header() {
             >
               {t("navVolunteer")}
             </Link>
-            <div className="flex items-center justify-center gap-4 pt-2 text-xs text-foreground/70">
+            <div className="flex items-center justify-between pt-3 border-t border-black/5 text-xs text-foreground/70">
               <a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`} className="hover:text-brand">
                 📞 {site.phone}
               </a>
+              <Link
+                href="/admin"
+                onClick={() => setOpen(false)}
+                className="font-medium text-brand hover:text-brand-dark flex items-center gap-1"
+              >
+                <span>🔐</span> Admin Console
+              </Link>
             </div>
           </div>
         </div>
