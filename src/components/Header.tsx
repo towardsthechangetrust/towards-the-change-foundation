@@ -149,9 +149,9 @@ export function Header() {
               <Link
                 href="/admin"
                 onClick={() => setOpen(false)}
-                className="font-medium text-brand hover:text-brand-dark flex items-center gap-1"
+                className="font-medium text-brand hover:text-brand-dark"
               >
-                <span>🔐</span> Admin Console
+                Admin Console
               </Link>
             </div>
           </div>
