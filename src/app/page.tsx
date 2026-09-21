@@ -40,13 +40,13 @@ export default function Home() {
           </div>
 
           {/* Mobile subtle trail divider cleanly below the content */}
-          <div className="mt-10 flex justify-center text-brand/40 sm:hidden">
+          <div className="mt-10 flex justify-center text-black/50 sm:hidden">
             <FootstepTrail className="h-14 w-60" />
           </div>
         </div>
 
         {/* Desktop animated trail positioned safely below content */}
-        <FootstepTrail className="pointer-events-none absolute bottom-8 left-1/2 hidden h-28 w-[480px] -translate-x-1/2 text-brand sm:block" />
+        <FootstepTrail className="pointer-events-none absolute bottom-8 left-1/2 hidden h-28 w-[480px] -translate-x-1/2 text-black sm:block" />
       </section>
 
       <section className="bg-sand">

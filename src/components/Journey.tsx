@@ -4,7 +4,7 @@ function FootIcon({ flip }: { flip?: boolean }) {
   return (
     <svg
       viewBox="0 0 24 34"
-      className={`h-6 w-6 text-brand/70 ${flip ? "-scale-x-100" : ""}`}
+      className={`h-6 w-6 text-black ${flip ? "-scale-x-100" : ""}`}
       aria-hidden="true"
     >
       <ellipse cx="12" cy="20" rx="7" ry="12" fill="currentColor" />
@@ -34,7 +34,7 @@ export function Journey() {
             {i !== journey.length - 1 && (
               <span
                 aria-hidden="true"
-                className="absolute left-[17px] top-9 h-[calc(100%-1.25rem)] w-px bg-brand/20 sm:left-[19px] sm:top-10 sm:h-[calc(100%-1.5rem)]"
+                className="absolute left-[17px] top-9 h-[calc(100%-1.25rem)] w-px bg-black/15 sm:left-[19px] sm:top-10 sm:h-[calc(100%-1.5rem)]"
               />
             )}
             <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sand sm:h-10 sm:w-10">
