@@ -18,34 +18,34 @@ function FootIcon({ flip }: { flip?: boolean }) {
 
 export function Journey() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
+    <section className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="font-display text-3xl font-semibold text-brand-dark sm:text-4xl">
+        <h2 className="font-display text-2xl font-semibold text-brand-dark sm:text-4xl">
           Every step has taken us further
         </h2>
-        <p className="mt-3 text-foreground/70">
+        <p className="mt-2.5 text-sm text-foreground/75 sm:mt-3 sm:text-base">
           A small, steady trail of work rather than one giant leap.
         </p>
       </div>
 
-      <ol className="relative mx-auto mt-14 max-w-3xl">
+      <ol className="relative mx-auto mt-10 max-w-3xl sm:mt-14">
         {journey.map((step, i) => (
-          <li key={step.year} className="relative flex gap-6 pb-12 last:pb-0">
+          <li key={step.year} className="relative flex gap-4 pb-9 last:pb-0 sm:gap-6 sm:pb-12">
             {i !== journey.length - 1 && (
               <span
                 aria-hidden="true"
-                className="absolute left-[19px] top-10 h-[calc(100%-1.5rem)] w-px bg-brand/20"
+                className="absolute left-[17px] top-9 h-[calc(100%-1.25rem)] w-px bg-brand/20 sm:left-[19px] sm:top-10 sm:h-[calc(100%-1.5rem)]"
               />
             )}
-            <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sand">
+            <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sand sm:h-10 sm:w-10">
               <FootIcon flip={i % 2 === 1} />
             </span>
-            <div className="pt-1">
-              <p className="text-sm font-semibold tracking-wide text-coral">{step.year}</p>
-              <h3 className="mt-1 font-display text-xl font-semibold text-brand-dark">
+            <div className="pt-0.5 sm:pt-1">
+              <p className="text-xs font-semibold tracking-wide text-coral sm:text-sm">{step.year}</p>
+              <h3 className="mt-0.5 font-display text-lg font-semibold text-brand-dark sm:mt-1 sm:text-xl">
                 {step.title}
               </h3>
-              <p className="mt-1 text-foreground/70">{step.description}</p>
+              <p className="mt-1 text-xs text-foreground/75 sm:text-sm">{step.description}</p>
             </div>
           </li>
         ))}

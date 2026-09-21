@@ -51,7 +51,7 @@ export function ContactForm() {
             required
             autoComplete="name"
             placeholder="Your name"
-            className="mt-1.5 w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-brand focus:outline-none"
+            className="mt-1.5 w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:border-brand focus:outline-none sm:text-sm"
           />
         </div>
 
@@ -69,7 +69,7 @@ export function ContactForm() {
             required
             autoComplete="email"
             placeholder="you@example.com"
-            className="mt-1.5 w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-brand focus:outline-none"
+            className="mt-1.5 w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:border-brand focus:outline-none sm:text-sm"
           />
         </div>
       </div>
@@ -84,7 +84,7 @@ export function ContactForm() {
         <select
           id="contact-interest"
           name="interest"
-          className="mt-1.5 w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm text-foreground focus:border-brand focus:outline-none"
+          className="mt-1.5 w-full rounded-xl border border-black/10 bg-white px-4 py-2.5 text-base text-foreground focus:border-brand focus:outline-none sm:text-sm"
         >
           <option value="">Select an option</option>
           <option value="Volunteer">Volunteer with a program</option>
@@ -108,7 +108,7 @@ export function ContactForm() {
           required
           rows={5}
           placeholder="Tell us a bit about yourself and what you have in mind…"
-          className="mt-1.5 w-full resize-none rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-brand focus:outline-none"
+          className="mt-1.5 w-full resize-none rounded-xl border border-black/10 bg-white px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:border-brand focus:outline-none sm:text-sm"
         />
       </div>
 
