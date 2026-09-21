@@ -4,9 +4,60 @@ import { site } from "@/lib/site";
 import { CopyButton } from "@/components/CopyButton";
 
 export const metadata: Metadata = {
-  title: "Support Our Work",
-  description: `Contribute to ${site.name}. Direct bank transfer and UPI details to fund youth-led health camps, education kits, and rural outreach in Tamil Nadu.`,
+  title: "Donate & Support Our Work",
+  description: `Contribute to ${site.name}. Official bank transfer and UPI details to directly fund youth-led health camps, learning kits, tree drives, and rural community outreach in Tamil Nadu.`,
   alternates: { canonical: "/donate" },
+  openGraph: {
+    title: `Donate & Support · ${site.name}`,
+    description: `Official bank and UPI details to support youth-led healthcare camps, learning kits, and rural welfare in Tamil Nadu.`,
+    url: `${site.url}/donate`,
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `Support ${site.name}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Donate & Support · ${site.name}`,
+    description: `Official bank and UPI details to support youth-led healthcare camps and rural welfare in Tamil Nadu.`,
+    images: ["/opengraph-image"],
+  },
+};
+
+const donateJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${site.url}/donate/#webpage`,
+      url: `${site.url}/donate`,
+      name: `Donate & Support Our Work · ${site.name}`,
+      description: `Support grassroots community welfare initiatives across Tamil Nadu.`,
+      isPartOf: { "@id": `${site.url}/#website` },
+      potentialAction: {
+        "@type": "DonateAction",
+        target: `${site.url}/donate`,
+        recipient: {
+          "@id": `${site.url}/#organization`,
+        },
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: site.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Donate",
+          item: `${site.url}/donate`,
+        },
+      ],
+    },
+  ],
 };
 
 const impactTiers = [
@@ -39,6 +90,10 @@ export default function DonatePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(donateJsonLd) }}
+      />
       <section className="mx-auto max-w-4xl px-4 py-10 text-center sm:px-6 sm:py-16">
         <p className="text-xs font-semibold uppercase tracking-wide text-coral sm:text-sm">
           Support Our Mission

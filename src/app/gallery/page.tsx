@@ -5,9 +5,53 @@ import { GalleryGrid, type MediaItem } from "./GalleryGrid";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Impact Gallery",
-  description: `Photos and videos from ground-level community drives, health camps, and youth empowerment initiatives by ${site.name} across Tamil Nadu.`,
+  title: "Impact Gallery | Photos & Videos",
+  description: `Photos and videos from ground-level community drives, free medical camps, and youth initiatives conducted by ${site.name} across Tamil Nadu.`,
   alternates: { canonical: "/gallery" },
+  openGraph: {
+    title: `Impact Gallery · ${site.name}`,
+    description: `Photos and videos from ground-level community drives and health camps by ${site.name} in Tamil Nadu.`,
+    url: `${site.url}/gallery`,
+    type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `Impact Gallery - ${site.name}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Impact Gallery · ${site.name}`,
+    description: `Photos and videos from ground-level community drives and health camps by ${site.name} in Tamil Nadu.`,
+    images: ["/opengraph-image"],
+  },
+};
+
+const galleryJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": `${site.url}/gallery/#webpage`,
+      url: `${site.url}/gallery`,
+      name: `Impact Gallery · ${site.name}`,
+      description: `Photos and videos from community welfare initiatives across Tamil Nadu.`,
+      isPartOf: { "@id": `${site.url}/#website` },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: site.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Impact Gallery",
+          item: `${site.url}/gallery`,
+        },
+      ],
+    },
+  ],
 };
 
 async function getMediaItems(): Promise<MediaItem[]> {
@@ -31,6 +75,10 @@ export default async function GalleryPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(galleryJsonLd) }}
+      />
       <section className="mx-auto max-w-4xl px-4 py-10 text-center sm:px-6 sm:py-16">
         <p className="text-xs font-semibold uppercase tracking-wide text-coral sm:text-sm">
           Field In Action
