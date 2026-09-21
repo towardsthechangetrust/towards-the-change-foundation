@@ -1,0 +1,9 @@
+{
+    "name": "towards-the-change-foundation",
+    "services": [
+        {
+            "binding": "WORKER_SELF_REFERENCE",
+            "service": "towards-the-change-foundation"
+        }
+    ]
+}
