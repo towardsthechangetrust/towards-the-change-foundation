@@ -31,6 +31,7 @@ const categories = [
   "Rural Upliftment",
   "Awards & Recognition",
   "General",
+  "Other",
 ];
 
 export default function AdminPage() {
@@ -50,6 +51,7 @@ export default function AdminPage() {
   const [loadingMedia, setLoadingMedia] = useState(false);
   const [uploadTitle, setUploadTitle] = useState("");
   const [uploadCategory, setUploadCategory] = useState(categories[0]);
+  const [customCategory, setCustomCategory] = useState("");
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
   const [uploadMessage, setUploadMessage] = useState("");
@@ -144,10 +146,15 @@ export default function AdminPage() {
     setUploading(true);
     setUploadMessage("");
 
+    const finalCategory =
+      uploadCategory === "Other"
+        ? customCategory.trim() || "General"
+        : uploadCategory;
+
     const formData = new FormData();
     formData.append("file", selectedFile);
     formData.append("title", uploadTitle.trim());
-    formData.append("category", uploadCategory);
+    formData.append("category", finalCategory);
 
     try {
       const res = await fetch("/api/admin/media", {
@@ -159,6 +166,7 @@ export default function AdminPage() {
       if (res.ok && data.success) {
         setUploadMessage("Uploaded successfully!");
         setUploadTitle("");
+        setCustomCategory("");
         setSelectedFile(null);
         // Reset file input
         const fileInput = document.getElementById("media-file-input") as HTMLInputElement;
@@ -413,10 +421,10 @@ export default function AdminPage() {
           {/* Upload Form Box */}
           <div className="rounded-3xl border border-brand/15 bg-white p-6 shadow-sm sm:p-8">
             <h2 className="font-display text-lg font-semibold text-brand-dark sm:text-xl">
-              Upload New Photo or Video to R2
+              Upload New Photo or Video
             </h2>
             <p className="mt-1 text-xs text-foreground/70">
-              Media uploaded here will instantly be stored in Cloudflare R2 and displayed in the public gallery.
+              Media uploaded here will instantly be displayed in the public gallery.
             </p>
 
             <form onSubmit={handleUpload} className="mt-5 space-y-4">
@@ -455,6 +463,23 @@ export default function AdminPage() {
                 </div>
               </div>
 
+              {uploadCategory === "Other" && (
+                <div>
+                  <label htmlFor="custom-category" className="block text-xs font-medium text-brand-dark">
+                    Custom Category Name <span aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="custom-category"
+                    type="text"
+                    required
+                    value={customCategory}
+                    onChange={(e) => setCustomCategory(e.target.value)}
+                    placeholder="e.g. Tree Plantation, Youth Sports Camp"
+                    className="mt-1.5 w-full rounded-xl border border-black/10 bg-sand/20 px-3.5 py-2.5 text-sm focus:border-brand focus:bg-white focus:outline-none"
+                  />
+                </div>
+              )}
+
               <div>
                 <label htmlFor="media-file-input" className="block text-xs font-medium text-brand-dark">
                   Select Image or Video File (Max 100MB) <span aria-hidden="true">*</span>
@@ -489,7 +514,7 @@ export default function AdminPage() {
                 disabled={uploading}
                 className="rounded-full bg-brand px-7 py-3 text-xs font-semibold text-white shadow-sm transition hover:bg-brand-dark disabled:opacity-60"
               >
-                {uploading ? "Uploading to R2…" : "Upload to Gallery"}
+                {uploading ? "Uploading…" : "Upload to Gallery"}
               </button>
             </form>
           </div>
