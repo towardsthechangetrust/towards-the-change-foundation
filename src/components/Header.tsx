@@ -52,7 +52,13 @@ export function Header() {
         </nav>
 
         {/* Desktop CTA Buttons */}
-        <div className="hidden items-center gap-3 sm:flex">
+        <div className="hidden items-center gap-2.5 sm:flex">
+          <Link
+            href="/admin"
+            className="rounded-full border border-black/10 px-3.5 py-2 text-xs font-semibold text-foreground/75 transition hover:border-brand hover:text-brand hover:bg-sand/40"
+          >
+            Admin Console
+          </Link>
           <Link
             href="/donate"
             className="rounded-full border border-brand/30 px-4 py-2 text-sm font-semibold text-brand-dark transition hover:border-brand hover:bg-sand/40"
