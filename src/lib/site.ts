@@ -9,7 +9,14 @@ export const site = {
   founded: 2021,
   location: "1/300, Katheri, Samiyampalayam, Sangari, Salem 638183",
   email: "towardsthechangetrust@gmail.com",
-  phone: "+91 00000 00000",
+  phone: "+91 93854 24784",
+  bank: {
+    accountName: "Towards the Change Foundation",
+    accountNumber: "120002123382",
+    ifsc: "CNRB0005554",
+    bankName: "Canara Bank",
+    branch: "Katheri Branch",
+  },
   social: {
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/",

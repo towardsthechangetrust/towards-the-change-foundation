@@ -29,7 +29,9 @@ export default function ContactPage() {
         </div>
         <div className="rounded-2xl border border-black/5 bg-white p-6">
           <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-coral">Phone</h2>
-          <p className="mt-2 text-sm text-foreground/70">{site.phone}</p>
+          <a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`} className="mt-2 block text-sm text-brand hover:text-brand-dark">
+            {site.phone}
+          </a>
         </div>
         <div className="rounded-2xl border border-black/5 bg-white p-6">
           <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-coral">Based in</h2>

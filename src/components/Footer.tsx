@@ -28,6 +28,7 @@ export function Footer() {
               <ul className="mt-3 space-y-2 text-foreground/70">
                 <li><Link href="/about" className="hover:text-brand">About</Link></li>
                 <li><Link href="/programs" className="hover:text-brand">Programs</Link></li>
+                <li><Link href="/donate" className="hover:text-brand">Support Us</Link></li>
                 <li><Link href="/contact" className="hover:text-brand">Contact</Link></li>
               </ul>
             </div>
@@ -35,6 +36,11 @@ export function Footer() {
               <p className="font-semibold text-brand-dark">Reach us</p>
               <ul className="mt-3 space-y-2 text-foreground/70">
                 <li>{site.location}</li>
+                <li>
+                  <a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`} className="hover:text-brand">
+                    {site.phone}
+                  </a>
+                </li>
                 <li>
                   <a href={`mailto:${site.email}`} className="hover:text-brand">
                     {site.email}
