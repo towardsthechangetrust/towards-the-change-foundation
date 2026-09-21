@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
     // Cloudflare Worker types from conflicting with DOM types and hanging the build.
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
 export default nextConfig;
