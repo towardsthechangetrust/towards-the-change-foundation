@@ -2,7 +2,7 @@ export const site = {
   name: "Towards the Change Foundation",
   shortName: "Towards the Change",
   tagline: "A step towards humanity",
-  url: "https://www.towardsthechange.org",
+  url: "https://towardsthechangefoundation.in",
   description:
     "Towards the Change Foundation is a youth-led NGO based in Salem, Tamil Nadu, running community programs in health, safety, education, environment and livelihoods.",
   founder: "Nirmal Kathirvel",
