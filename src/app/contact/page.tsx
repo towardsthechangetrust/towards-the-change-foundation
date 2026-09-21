@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/site";
+import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -16,32 +17,27 @@ export default function ContactPage() {
       </h1>
       <p className="mt-4 text-lg text-foreground/70">
         Whether you want to volunteer, partner with us, or support a program,
-        reach out and we&apos;ll get back to you.
+        fill out the form and we&apos;ll get back to you.
       </p>
 
-      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+      <div className="mt-10 grid gap-6 sm:grid-cols-3">
         <div className="rounded-2xl border border-black/5 bg-white p-6">
-          <h2 className="font-display text-lg font-semibold text-brand-dark">Email</h2>
-          <a href={`mailto:${site.email}`} className="mt-2 block text-brand hover:text-brand-dark">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-coral">Email</h2>
+          <a href={`mailto:${site.email}`} className="mt-2 block text-sm text-brand hover:text-brand-dark">
             {site.email}
           </a>
         </div>
         <div className="rounded-2xl border border-black/5 bg-white p-6">
-          <h2 className="font-display text-lg font-semibold text-brand-dark">Phone</h2>
-          <p className="mt-2 text-foreground/70">{site.phone}</p>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-coral">Phone</h2>
+          <p className="mt-2 text-sm text-foreground/70">{site.phone}</p>
         </div>
-        <div className="rounded-2xl border border-black/5 bg-white p-6 sm:col-span-2">
-          <h2 className="font-display text-lg font-semibold text-brand-dark">Location</h2>
-          <p className="mt-2 text-foreground/70">{site.location}</p>
+        <div className="rounded-2xl border border-black/5 bg-white p-6">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-coral">Based in</h2>
+          <p className="mt-2 text-sm text-foreground/70">Salem, Tamil Nadu</p>
         </div>
       </div>
 
-      <a
-        href={`mailto:${site.email}?subject=Volunteering with ${site.shortName}`}
-        className="mt-10 inline-block rounded-full bg-brand px-7 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
-      >
-        Email us
-      </a>
+      <ContactForm />
     </section>
   );
 }

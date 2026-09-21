@@ -13,5 +13,12 @@
             "binding": "WORKER_SELF_REFERENCE",
             "service": "towards-the-change-foundation"
         }
+    ],
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "ttc-contact-submissions",
+            "database_id": "fe6353d6-c8c7-4f78-9867-879f230b665d"
+        }
     ]
 }
