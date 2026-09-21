@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /var/folders -maxdepth 6 \\\\\\( -iname \"*.png\" -o -iname \"*.jpg\" \\\\\\) -newermt \"2026-08-28\" 2>/dev/null | head -30)",
+      "Bash(npx --yes create-next-app@latest . --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(npx next *)",
+      "Bash(npx eslint *)",
+      "Bash(npm run *)",
+      "Bash(ls -la /private/tmp/claude-502/-Users-thilak-ram-Documents-ttc/a9852bbd-1c89-4133-99b6-c203df8aa838/ 2>/dev/null; find /private/tmp/claude-502 -iname \"*.png\" -o -iname \"*.jpg\" 2>/dev/null | head -50)",
+      "Bash(mdfind -onlyin /Users/thilak.ram -name '' 'kMDItemContentCreationDate >= $time.today\\(-1\\)')",
+      "Bash(grep -iE '\\\\.\\(png|jpe?g\\)$')",
+      "Bash(cp \"/Users/thilak.ram/Downloads/Instagram Image.jpg\" public/images/logo.jpg)",
+      "Bash(cp \"/Users/thilak.ram/Downloads/DOC Aug 15 from t.thilakram6.jpg\" public/images/cm-youth-award.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"public/images/cm-youth-award.jpg\")",
+      "Bash(python3 -c \"print\\('python3 ok'\\)\")",
+      "Bash(python3 -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(sips --help)",
+      "Bash(cp \"/Users/thilak.ram/Downloads/DOC Aug 15 from t.thilakram6.jpg\" /tmp/award_test.jpg)",
+      "Bash(sips -c 900 720 --cropOffset 540 605 /tmp/award_test.jpg --out /tmp/award_crop1.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/award_crop1.jpg)",
+      "Bash(sips -c 860 700 --cropOffset 545 650 /tmp/award_test.jpg --out /tmp/award_crop2.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/award_crop2.jpg)",
+      "Bash(sips -c 860 700 --cropOffset 545 650 \"/Users/thilak.ram/Downloads/DOC Aug 15 from t.thilakram6.jpg\" --out \"/Users/thilak.ram/Documents/ttc/public/images/cm-youth-award.jpg\")",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/thilak.ram/Documents/ttc/public/images/cm-youth-award.jpg\")",
+      "Bash(ls -la \"/var/folders/5s/6q2nqdnx1070d1y12m3chl5c0000gp/T/TemporaryItems/NSIRD_screencaptureui_MdNgBP/\" 2>&1)",
+      "Bash(cp \"/var/folders/5s/6q2nqdnx1070d1y12m3chl5c0000gp/T/TemporaryItems/NSIRD_screencaptureui_MdNgBP/Screen Recording 2026-08-28 at 6.11.13 PM.mov\" /private/tmp/claude-502/-Users-thilak-ram-Documents-ttc/a9852bbd-1c89-4133-99b6-c203df8aa838/scratchpad/rec.mov 2>&1)",
+      "Bash(find /Users/thilak.ram/Desktop /Users/thilak.ram/Downloads -iname \"*.mov\" -newermt \"2026-08-28 18:00\" 2>/dev/null)",
+      "Bash(mdfind -onlyin /Users/thilak.ram 'kMDItemContentCreationDate >= $time.today\\(-1\\)')"
+    ]
+  }
+}

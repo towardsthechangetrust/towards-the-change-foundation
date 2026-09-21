@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffdf7;
+  --foreground: #1c2521;
+  --brand: #1c6b4f;
+  --brand-dark: #123f2e;
+  --sand: #f2ecd8;
+  --coral: #e0632e;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-sand: var(--sand);
+  --color-coral: var(--coral);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+@keyframes footstep-fade {
+  0%, 100% {
+    opacity: 0.15;
+    transform: translateY(2px) scale(0.9);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.08);
+  }
+  30% {
+    opacity: 0.15;
+    transform: translateY(2px) scale(0.9);
+  }
+}
+
+.footstep {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: footstep-fade 3s ease-in-out infinite both;
 }
