@@ -30,7 +30,7 @@ export function Header() {
             alt={site.name}
             width={48}
             height={48}
-            className="h-10 w-10 sm:h-12 sm:w-12"
+            className="h-15 w-15 rounded-full border-2 border-brand/30 sm:h-17 sm:w-17"
             priority
           />
           <span className="font-display text-base font-semibold leading-tight text-brand-dark sm:text-lg">
