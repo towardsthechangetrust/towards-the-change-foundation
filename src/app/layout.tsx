@@ -104,7 +104,7 @@ const jsonLd = {
       alternateName: [site.shortName, "TTC Foundation", "Towards the Change Trust"],
       url: site.url,
       logo: `${site.url}/images/logo.jpg`,
-      image: `${site.url}/images/cm-youth-award.jpg`,
+      image: `${site.url}/images/cm-youth-award-new.jpg`,
       description: site.description,
       slogan: site.tagline,
       foundingDate: String(site.founded),

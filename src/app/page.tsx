@@ -54,7 +54,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-5xl items-center gap-8 px-6 py-12 sm:gap-10 sm:py-16 sm:grid-cols-2">
           <div className="order-2 overflow-hidden rounded-2xl shadow-md sm:order-1 max-h-[420px] sm:max-h-none">
             <Image
-              src="/images/cm-youth-award.jpg"
+              src="/images/cm-youth-award-new.jpg"
               alt={`${site.founder} receiving the Chief Minister's Youth Award 2026`}
               width={700}
               height={860}
