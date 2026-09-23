@@ -24,10 +24,10 @@ export const site = {
 };
 
 export const stats = [
-  { value: "80+", label: "community programs in the last year" },
-  { value: "10,000+", label: "people reached across Tamil Nadu" },
-  { value: "5", label: "years of continuous ground work" },
-  { value: "20+", label: "districts touched by our volunteers" },
+  { value: "5000+", label: "Community programs conducted" },
+  { value: "1,00,000+", label: "People reached across Tamil Nadu" },
+  { value: "5", label: "Years of continuous ground work" },
+  { value: "20+", label: "Districts touched by our volunteers" },
 ];
 
 export const focusAreas = [
