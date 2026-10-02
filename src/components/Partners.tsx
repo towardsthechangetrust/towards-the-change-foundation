@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { partners } from "@/lib/site";
 
 export function Partners() {
@@ -27,9 +28,19 @@ export function Partners() {
                   <span className="inline-flex items-center rounded-full bg-sand px-3 py-1 text-[11px] font-semibold text-brand-dark">
                     {partner.badge}
                   </span>
-                  <span className="text-xs font-mono font-bold tracking-wider text-coral">
-                    {partner.shortName}
-                  </span>
+                  {partner.logo ? (
+                    <Image
+                      src={partner.logo.src}
+                      alt={`${partner.name} logo`}
+                      width={partner.logo.width}
+                      height={partner.logo.height}
+                      className="h-10 w-24 object-contain object-right"
+                    />
+                  ) : (
+                    <span className="text-xs font-mono font-bold tracking-wider text-coral">
+                      {partner.shortName}
+                    </span>
+                  )}
                 </div>
 
                 <div className="mt-5">

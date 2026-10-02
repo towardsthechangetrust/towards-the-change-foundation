@@ -86,37 +86,119 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-sand px-6 py-16">
+        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:gap-16">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-coral">
+              Our mission
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-brand-dark">
+              Helping young people build skills, confidence, and a life of contribution.
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/75">
+              <p>
+                To empower young people with practical skills, training, work
+                experience, leadership opportunities, and guidance that prepare
+                them for meaningful careers and responsible participation in society.
+              </p>
+              <p>
+                We encourage youth to discover their potential, develop
+                confidence and leadership, and take an active role in
+                volunteering and community development. Through learning,
+                experience, and service, we help young people become skilled
+                professionals, responsible citizens, and positive contributors
+                to their communities.
+              </p>
+              <p>
+                The growth of young people who have been part of our journey,
+                many of whom have gone on to build meaningful careers while
+                continuing to contribute responsibly to society, inspires us
+                to prepare and support the next generation.
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-brand/25 pt-8 md:border-l md:border-t-0 md:pl-12 md:pt-0">
+            <p className="text-sm font-semibold uppercase tracking-wide text-coral">
+              Our vision
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-brand-dark">
+              A generation of skilled, confident, and socially responsible young leaders.
+            </h2>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/75">
+              <p>
+                To build a generation of skilled, confident, and socially
+                responsible young leaders who use their knowledge, skills, and
+                energy to strengthen communities, care for nature, embrace
+                volunteerism, and create positive and sustainable change for
+                present and future generations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Journey />
       <Partners />
 
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <h2 className="font-display text-3xl font-semibold text-brand-dark">Our approach</h2>
-        <div className="mt-8 grid gap-8 sm:grid-cols-3">
-          <div>
-            <h3 className="font-display text-lg font-semibold text-brand-dark">Youth-led</h3>
-            <p className="mt-2 text-sm text-foreground/70">
-              Programs are designed and run by young volunteers, for their own
-              communities.
-            </p>
-          </div>
-          <div>
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <p className="text-sm font-semibold uppercase tracking-wide text-coral">
+          Our focus
+        </p>
+        <h2 className="mt-3 font-display text-3xl font-semibold text-brand-dark">
+          Where young people create change
+        </h2>
+        <div className="mt-8 grid gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="border-t border-brand/25 py-5">
             <h3 className="font-display text-lg font-semibold text-brand-dark">
-              Ground-first
+              Youth Leadership
             </h3>
-            <p className="mt-2 text-sm text-foreground/70">
-              We go where the need is, from tribal hamlets to factory
-              townships, rather than waiting for people to come to us.
+            <p className="mt-2 text-sm leading-relaxed text-foreground/70">
+              Developing young people into confident, capable, and responsible leaders.
             </p>
           </div>
-          <div>
+          <div className="border-t border-brand/25 py-5">
             <h3 className="font-display text-lg font-semibold text-brand-dark">
-              Partnered
+              Community Development
             </h3>
-            <p className="mt-2 text-sm text-foreground/70">
-              We work alongside government bodies, colleges and local
-              institutions to make every effort go further.
+            <p className="mt-2 text-sm leading-relaxed text-foreground/70">
+              Enabling youth to identify community needs and take meaningful action.
             </p>
           </div>
+          <div className="border-t border-brand/25 py-5">
+            <h3 className="font-display text-lg font-semibold text-brand-dark">
+              Volunteerism
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-foreground/70">
+              Creating a culture of service, participation, and responsibility.
+            </p>
+          </div>
+          <div className="border-t border-brand/25 py-5">
+            <h3 className="font-display text-lg font-semibold text-brand-dark">
+              Skills &amp; Career Development
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-foreground/70">
+              Providing practical skills, training, experience, and opportunities for
+              young people to build their futures.
+            </p>
+          </div>
+          <div className="border-t border-brand/25 py-5">
+            <h3 className="font-display text-lg font-semibold text-brand-dark">
+              Environment &amp; Sustainability
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-foreground/70">
+              Encouraging young people to protect nature and think responsibly about
+              the future.
+            </p>
+          </div>
+        </div>
+        <div className="mt-8 border-t-2 border-brand pt-6">
+          <p className="text-sm font-semibold uppercase tracking-wide text-coral">
+            Our core message
+          </p>
+          <p className="mt-3 font-display text-2xl font-semibold leading-snug text-brand-dark">
+            Empowering Youth. Strengthening Communities. Caring for Nature. Creating
+            Sustainable Change.
+          </p>
         </div>
       </section>
     </>

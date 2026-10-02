@@ -17,8 +17,15 @@ export default function Home() {
               Based in Salem, Tamil Nadu &middot; since {site.founded}
             </p>
             <h1 className="mt-5 font-display text-3xl font-semibold leading-tight text-brand-dark sm:mt-6 sm:text-5xl">
-              {site.tagline}, one community at a time.
+              {site.tagline}
             </h1>
+            <p className="mt-4 font-display text-lg font-semibold leading-snug text-brand sm:text-xl">
+              Empowering Youth, Strengthening Communities, Creating Sustainable
+              Change.
+            </p>
+            <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-coral sm:text-sm">
+              Youth Leadership · Community Development · Volunteerism
+            </p>
             <p className="mt-4 text-base text-foreground/75 sm:mt-5 sm:text-lg">
               {site.name} is a youth-led movement working on health, safety,
               education and livelihoods across Tamil Nadu. It is built on the

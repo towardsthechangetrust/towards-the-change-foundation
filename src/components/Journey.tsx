@@ -1,20 +1,5 @@
 import { journey } from "@/lib/site";
-
-function FootIcon({ flip }: { flip?: boolean }) {
-  return (
-    <svg
-      viewBox="0 0 24 34"
-      className={`h-6 w-6 text-black ${flip ? "-scale-x-100" : ""}`}
-      aria-hidden="true"
-    >
-      <ellipse cx="12" cy="20" rx="7" ry="12" fill="currentColor" />
-      <ellipse cx="5" cy="6" rx="2.1" ry="2.6" fill="currentColor" />
-      <ellipse cx="10" cy="3.6" rx="2.1" ry="2.8" fill="currentColor" />
-      <ellipse cx="15" cy="3.6" rx="2" ry="2.7" fill="currentColor" />
-      <ellipse cx="19.5" cy="5.6" rx="1.8" ry="2.4" fill="currentColor" />
-    </svg>
-  );
-}
+import { FootstepIcon } from "@/components/Logo";
 
 export function Journey() {
   return (
@@ -38,7 +23,7 @@ export function Journey() {
               />
             )}
             <span className="relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sand sm:h-10 sm:w-10">
-              <FootIcon flip={i % 2 === 1} />
+              <FootstepIcon className="h-6 w-6 text-black" />
             </span>
             <div className="pt-0.5 sm:pt-1">
               <p className="text-xs font-semibold tracking-wide text-coral sm:text-sm">{step.year}</p>

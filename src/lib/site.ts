@@ -1,7 +1,7 @@
 export const site = {
   name: "Towards the Change Foundation",
   shortName: "Towards the Change",
-  tagline: "A step towards humanity",
+  tagline: "With Youth Towards Change, With Nature Towards Future Generations.",
   url: "https://towardsthechangefoundation.in",
   description:
     "Towards the Change Foundation is a youth-led NGO based in Salem, Tamil Nadu, running community programs in health, safety, education, environment and livelihoods.",
@@ -95,6 +95,11 @@ export const partners = [
     description:
       "Collaborating to activate youth leadership, volunteer mobilization, and nation-building initiatives across Tamil Nadu.",
     badge: "Youth & Volunteering",
+    logo: {
+      src: "/images/mybharatlogo_opt_2x.png",
+      width: 384,
+      height: 160,
+    },
   },
   {
     name: "Bureau of Indian Standards",
@@ -104,6 +109,11 @@ export const partners = [
     description:
       "Partnering on grassroots quality standards, consumer rights awareness, and youth educational outreach in educational institutions.",
     badge: "Standards & Awareness",
+    logo: {
+      src: "/images/BIS-log.png",
+      width: 388,
+      height: 100,
+    },
   },
   {
     name: "Haqdarshak",
@@ -113,5 +123,6 @@ export const partners = [
     description:
       "Bridging the last-mile information gap to help rural, tribal, and vulnerable families apply for and access government welfare schemes.",
     badge: "Welfare Schemes & Direct Benefit",
+    logo: null,
   },
 ];
