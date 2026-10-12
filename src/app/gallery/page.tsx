@@ -4,6 +4,8 @@ import { site } from "@/lib/site";
 import { GalleryGrid, type MediaItem } from "./GalleryGrid";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Impact Gallery | Photos & Videos",
   description: `Photos and videos from ground-level community drives, free medical camps, and youth initiatives conducted by ${site.name} across Tamil Nadu.`,
