@@ -1,7 +1,7 @@
 export const site = {
   name: "Towards the Change Foundation",
   shortName: "Towards the Change",
-  tagline: "With Youth Towards Change, With Nature Towards Future Generations.",
+  tagline: "A step towards humanity",
   url: "https://towardsthechangefoundation.in",
   description:
     "Towards the Change Foundation is a youth-led NGO based in Salem, Tamil Nadu, running community programs in health, safety, education, environment and livelihoods.",
@@ -138,7 +138,11 @@ export const partners = [
     description:
       "Partnering on child rights protection, adolescent empowerment, safety workshops, and specialized welfare outreach across Salem district.",
     badge: "Government Collaborator",
-    logo: null,
+    logo: {
+      src: "/images/tn-govt-logo.png",
+      width: 180,
+      height: 180,
+    },
   },
   {
     name: "AVS College of Arts and Science, Salem",
@@ -148,7 +152,11 @@ export const partners = [
     description:
       "Institutional partner collaborating on youth clubs, NSS volunteer engagement, leadership camps, and continuous community service drives.",
     badge: "Academic Partner",
-    logo: null,
+    logo: {
+      src: "/images/avs-college-logo.png",
+      width: 200,
+      height: 200,
+    },
   },
   {
     name: "Thozhargalin Karam Charitable Trust",
@@ -158,7 +166,11 @@ export const partners = [
     description:
       "Collaborating on joint ground-level community welfare drives, humanitarian relief distribution, and rural support programs.",
     badge: "NGO Partner",
-    logo: null,
+    logo: {
+      src: "/images/thozhargalin-karam-logo.png",
+      width: 200,
+      height: 200,
+    },
   },
   {
     name: "Symbionic Tech Pvt. Ltd.",
@@ -168,7 +180,11 @@ export const partners = [
     description:
       "Providing technology enablement, web architecture, digital platforms, and technical modernization to scale grassroots program impact.",
     badge: "Technical Partner",
-    logo: null,
+    logo: {
+      src: "/images/symbionic-logo.png",
+      width: 152,
+      height: 47,
+    },
   },
 ];
 

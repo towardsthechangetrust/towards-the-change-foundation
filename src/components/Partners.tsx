@@ -29,14 +29,14 @@ export function Partners() {
                     {partner.badge}
                   </span>
                   {partner.logo ? (
-                    <div className="relative flex h-10 w-28 items-center justify-end">
+                    <div className="relative flex h-12 w-28 items-center justify-end">
                       <Image
                         src={partner.logo.src}
                         alt={`${partner.name} logo`}
                         width={partner.logo.width}
                         height={partner.logo.height}
                         unoptimized={partner.logo.src.endsWith(".svg")}
-                        className="max-h-10 w-auto max-w-[110px] object-contain object-right"
+                        className="max-h-12 w-auto max-w-[110px] object-contain object-right"
                       />
                     </div>
                   ) : (
