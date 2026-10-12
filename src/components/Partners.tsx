@@ -29,15 +29,18 @@ export function Partners() {
                     {partner.badge}
                   </span>
                   {partner.logo ? (
-                    <Image
-                      src={partner.logo.src}
-                      alt={`${partner.name} logo`}
-                      width={partner.logo.width}
-                      height={partner.logo.height}
-                      className="h-10 w-24 object-contain object-right"
-                    />
+                    <div className="relative flex h-10 w-28 items-center justify-end">
+                      <Image
+                        src={partner.logo.src}
+                        alt={`${partner.name} logo`}
+                        width={partner.logo.width}
+                        height={partner.logo.height}
+                        unoptimized={partner.logo.src.endsWith(".svg")}
+                        className="max-h-10 w-auto max-w-[110px] object-contain object-right"
+                      />
+                    </div>
                   ) : (
-                    <span className="text-xs font-mono font-bold tracking-wider text-coral">
+                    <span className="inline-flex items-center rounded-lg border border-coral/20 bg-coral/5 px-2.5 py-1 text-xs font-mono font-bold tracking-wider text-coral">
                       {partner.shortName}
                     </span>
                   )}
